@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClothesService } from '../services/clothes/clothes.service';
+import { cloth } from '../shared/models/clothes';
+
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,7 @@ import { ClothesService } from '../services/clothes/clothes.service';
 
 export class HomeComponent implements OnInit{
 
-  clothes:String[] = []; 
+  clothes:cloth[] = []; 
   constructor(private clothesService:ClothesService){}
   ngOnInit(): void{
     this.clothes = this.clothesService.getAll()

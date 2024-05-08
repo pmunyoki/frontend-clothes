@@ -1,0 +1,27 @@
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul li a{
+    width: 300px;
+    height: 700px;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;
+    margin: 8px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+li a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+ngb-rating {
+    color: #FFC107;
+    font-size: 16px;
+}
