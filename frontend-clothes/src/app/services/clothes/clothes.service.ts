@@ -12,7 +12,7 @@ export class ClothesService {
       {
         id:1,
         price: 1000,
-        category: 'casual',
+        category: 'Casual',
         favorite: true,
         stars: 5,
         imageUrl: '/assets/images/dress1.jpg'
@@ -20,7 +20,7 @@ export class ClothesService {
       {
         id:2,
         price: 2000,
-        category: 'dinner',
+        category: 'Dinner',
         favorite: true,
         stars: 4,
         imageUrl: '/assets/images/dress2.jpg'
@@ -28,7 +28,7 @@ export class ClothesService {
       {
         id:3,
         price: 3000,
-        category: 'evening',
+        category: 'Evening',
         favorite: false,
         stars: 3,
         imageUrl: '/assets/images/dress3.jpg'
@@ -36,7 +36,7 @@ export class ClothesService {
       {
         id:4,
         price: 4000,
-        category: 'cocktail',
+        category: 'Cocktail',
         favorite: false,
         stars: 2,
         imageUrl: '/assets/images/dress4.jpg'
@@ -44,7 +44,7 @@ export class ClothesService {
       {
         id:5,
         price: 1000,
-        category: 'official',
+        category: 'Official',
         favorite: true,
         stars: 5,
         imageUrl: '/assets/images/dress5.jpg'

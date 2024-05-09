@@ -8,7 +8,7 @@ ul{
 
 ul li a{
     width: 300px;
-    height: 700px;
+    height: 600px;
     border: 1px solid whitesmoke;
     border-radius: 16px;
     margin: 8px;
@@ -24,4 +24,20 @@ li a:hover{
 ngb-rating {
     color: #FFC107;
     font-size: 25px;
+}
+
+.favorite.not{
+    color: grey;
+}
+
+.favorite{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+.content{
+    position: relative;
+    padding: 20px, 20px;
 }

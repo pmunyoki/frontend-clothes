@@ -1,3 +1,4 @@
+<app-search></app-search>
 <ul>
     <li *ngFor="let cloth of clothes">
         <a>
@@ -6,11 +7,14 @@
                 <div class="category">
                     {{cloth.category}}
                 </div>
-                <span class="favorite {{cloth.favorite?'':'not'}}">
-                    ♥            
-                </span>
+                    <span class="favorite {{cloth.favorite?'':'not'}}">
+                        &hearts;           
+                    </span>
                 <div>
                     <ngb-rating [max]="5" [rate]="cloth.stars" [readonly]="false"></ngb-rating>
+                </div>
+                <div>
+                    <span> Ksh {{cloth.price}}</span>
                 </div>
                 
             </div>

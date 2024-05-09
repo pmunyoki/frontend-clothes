@@ -1,15 +1,38 @@
 .container{
-    padding: 0 auto;
-    justify-content: space-between;
-    display: flex;
+    margin: 0 ;
+    padding: 0;
+    justify-content: space-between
+    
 }
 
 nav ul li{
     display: inline;
-    padding: 1em;
+    padding: 56px;
+    margin: 0px;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
 }
 
 
 a{
     text-decoration: none;
+    font-size: 20px;
+    color: #bc544b;
+    display: inline-block;
+    padding: 16px;
+    margin: 0;
+    
+}
+header{
+    border-bottom: solid 1px rgb(134, 96, 96) ;
+    padding: 0;
+    margin: 0;
+
+}
+a:hover{
+    background-color: red;
+    opacity: 0.8;
+    
 }
