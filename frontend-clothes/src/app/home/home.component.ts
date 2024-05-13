@@ -19,7 +19,10 @@ export class HomeComponent implements OnInit{
       if(params.searchTerm)
         this.clothes = this.clothesService.getAll().filter(cloth => cloth.category.toLowerCase().includes(params.searchTerm.toLowerCase()))
       else if(params.tag)
-        this.clothes = this.clothesService.getAll().filter(cloth => cloth.category.toLowerCase().includes(params.tag.toLowerCase()))
+        if (params.tag == "All")
+          this.clothes = this.clothesService.getAll()
+        else
+          this.clothes = this.clothesService.getAll().filter(cloth => cloth.category.toLowerCase().includes(params.tag.toLowerCase()))
       else
         this.clothes = this.clothesService.getAll()
     })

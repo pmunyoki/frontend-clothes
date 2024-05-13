@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tag } from '../shared/models/tags';
 import { ClothesService } from '../services/clothes/clothes.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tag',
@@ -10,7 +11,7 @@ import { ClothesService } from '../services/clothes/clothes.service';
 export class TagComponent implements OnInit{
   
   tags: Tag[] = [];
-  constructor(private clothesService:ClothesService){
+  constructor(private clothesService:ClothesService ){
   }
 
   ngOnInit(): void{
