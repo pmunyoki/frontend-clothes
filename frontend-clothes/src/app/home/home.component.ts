@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ClothesService } from '../services/clothes/clothes.service';
 import { cloth } from '../shared/models/clothes';
 import { ActivatedRoute } from '@angular/router';
+import { Tag } from '../shared/models/tags';
 
 @Component({
   selector: 'app-home',
@@ -17,9 +18,10 @@ export class HomeComponent implements OnInit{
     this.route.params.subscribe(params =>{
       if(params.searchTerm)
         this.clothes = this.clothesService.getAll().filter(cloth => cloth.category.toLowerCase().includes(params.searchTerm.toLowerCase()))
+      else if(params.tag)
+        this.clothes = this.clothesService.getAll().filter(cloth => cloth.category.toLowerCase().includes(params.tag.toLowerCase()))
       else
         this.clothes = this.clothesService.getAll()
-
     })
     }
 }

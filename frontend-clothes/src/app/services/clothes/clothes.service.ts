@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { cloth } from 'src/app/shared/models/clothes';
+import { Tag } from 'src/app/shared/models/tags';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,36 @@ import { cloth } from 'src/app/shared/models/clothes';
 export class ClothesService {
 
   constructor() { }
+  getByTag(): Tag[]{
+    return[
+      {
+       name: "All",
+       count: 5 
+      },
+      {
+        name: "Casual",
+        count: 1 
+      },
+      {
+        name: "Dinner",
+        count: 1
+       },
+      {
+        name: "Official",
+        count: 1
+      },
+      {
+        name: "Cocktail",
+        count: 1
+      },
+      {
+        name: "Evening",
+        count: 1
+      }
+
+    ]
+
+  }
   getAll():cloth[]{
     return [
       {
