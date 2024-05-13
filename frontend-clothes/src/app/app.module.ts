@@ -10,6 +10,7 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagComponent } from './tag/tag.component';
+import { ClothpageComponent } from './clothpage/clothpage.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TagComponent } from './tag/tag.component';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    TagComponent
+    TagComponent,
+    ClothpageComponent
   ],
   imports: [
     BrowserModule,

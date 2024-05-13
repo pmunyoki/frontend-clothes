@@ -2,7 +2,7 @@
 <app-tag></app-tag>
 <ul>
     <li *ngFor="let cloth of clothes">
-        <a>
+        <a routerLink="/clothes/{{cloth.id}}">
             <img src="{{cloth.imageUrl}}">
             <div class="content">
                 <div class="category">

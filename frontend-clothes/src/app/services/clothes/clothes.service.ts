@@ -8,6 +8,9 @@ import { Tag } from 'src/app/shared/models/tags';
 export class ClothesService {
 
   constructor() { }
+  getById(id:number): cloth{
+    return  this.getAll().find( cloth => cloth.id ==id )
+  }
   getByTag(): Tag[]{
     return[
       {
