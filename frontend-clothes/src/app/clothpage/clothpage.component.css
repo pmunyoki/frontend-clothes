@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+
+}
+.container *{
+    min-width: 250px;
+    max-width: 600px;
+    max-height: 750px;
+}
+
+img{
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+button{
+    background-color: #e0115f  ;
+    border-radius: 30px;
+    margin: 30px;
+    border: none;
+}
+
